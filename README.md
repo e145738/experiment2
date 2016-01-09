@@ -4,12 +4,12 @@
 ##ディレクトリ構成
 experiment2  
 ├── first(1週目のやつをここに)  
-│　 ├──prog(プログラム関係をここに)  
-│　 └──reportskel-search1(texファイルなどがここに)  
+│　 ├──src(プログラム関係をここに)  
+│　 └──report(texファイルなどがここに)  
 │ 　  
 ├── second(2週目のやつをここに)  
-│　 ├──prog(プログラム関係をここに)  
-│　 └──reportskel-search1(texファイルなどがここに)  
+│　 ├──src(プログラム関係をここに)  
+│　 └──report(texファイルなどがここに)  
   
 
 
