@@ -5,8 +5,9 @@ set -e
 # x vs f(x)
 
 # 図タイトル(func), シード値(seed) の取得。
-if [ $# -eq 1 ] ; then
+if [ $# -eq 2 ] ; then
     func=$1
+		level=$2
 else
     echo "Usage: prompt> $0 \"gnuplot_style_func\" seed"
     echo "e.g.,: prompt> $0 \"x**2\" 1"
@@ -24,7 +25,7 @@ fi
 for seed in `seq 1 10`
 do
 	archive_file=.archive-$seed
-	$exec_file $seed > $archive_file
+	$level/$exec_file $seed > $archive_file
 	cat $archive_file | cut -f2,4,6,8 -d" " > .data-$seed
 done
 # 作図。
