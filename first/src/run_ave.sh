@@ -1,10 +1,16 @@
 #!/bin/sh
 set -e
 
+if [ $# -eq 1 ] ; then
+    level=$1
+else
+	level=.
+fi
 # steepest_decentをシード値(=初期探索点)を変えて10回実行し、
 # 収束するのに要した平均探索回数を算出。
 
-exec_file="./steepest_decent"
+
+exec_file="$level/steepest_decent"
 average_file="./average.txt"
 
 if [ -f $average_file ] ; then

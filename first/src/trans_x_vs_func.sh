@@ -5,9 +5,14 @@ set -e
 # x vs f(x)
 
 # 図タイトル(func), シード値(seed) の取得。
-if [ $# -eq 2 ] ; then
+if [ $# -eq 3 ] ; then
     func=$1
     seed=$2
+		level=$3
+elif [ $# -eq 2 ] ; then
+    func=$1
+    seed=$2
+		level=.
 else
     echo "Usage: prompt> $0 \"gnuplot_style_func\" seed"
     echo "e.g.,: prompt> $0 \"x**2\" 1"
@@ -15,7 +20,7 @@ else
 fi
 
 # シミュレーション実行＆データ抽出。
-exec_file="./steepest_decent"
+exec_file="$level/steepest_decent"
 transition_file="./transition.txt"
 
 if [ -f $transition_file ] ; then

@@ -15,7 +15,7 @@ else
 fi
 
 # シミュレーション実行＆データ抽出。
-exec_file="./steepest_decent"
+exec_file="$level/steepest_decent"
 transition_file="./transition.txt"
 
 if [ -f $transition_file ] ; then
@@ -25,7 +25,7 @@ fi
 for seed in `seq 1 10`
 do
 	archive_file=.archive-$seed
-	$level/$exec_file $seed > $archive_file
+	$exec_file $seed > $archive_file
 	cat $archive_file | cut -f2,4,6,8 -d" " > .data-$seed
 done
 # 作図。
