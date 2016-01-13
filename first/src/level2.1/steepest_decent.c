@@ -5,7 +5,7 @@
 #define X_MAX 10.0    /* 定義域の最大値 */
 #define X_MIN -10.0   /* 定義域の最小値 */
 #define Y_MAX 10.0    /* 定義域の最大値 */
-#define Y_MIN 0.0   /* 定義域の最小値 */
+#define Y_MIN -10.0   /* 定義域の最小値 */
 #define X_RANGE (abs(X_MAX)+abs(X_MIN))
 #define Y_RANGE (abs(Y_MAX)+abs(Y_MIN))
 #define SAME 0.0000001 /* 探索点の動作チェック */

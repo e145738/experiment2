@@ -62,7 +62,7 @@ double pd_y(double x, double y) {
 int main(int argc, char **argv) {
     double x,y,_x,_y;
     int    i;
-    double alpha = 0.8.2;
+    double alpha = 0.1;
     /** alpha: 学習レート
      * [課題] 正の範囲内で任意に設定し，それに伴う探索点の移動を観察せよ．
      * [option] alpha を固定にすることのメリット・デメリット、

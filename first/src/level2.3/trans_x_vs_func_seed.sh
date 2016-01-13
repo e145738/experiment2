@@ -15,14 +15,14 @@ else
 fi
 
 # シミュレーション実行＆データ抽出。
-exec_file="level2.3/steepest_decent"
+exec_file="./steepest_decent"
 transition_file="./transition.txt"
 
 if [ -f $transition_file ] ; then
     rm $transition_file
 fi
 
-for seed in $see1 $seed2 $seed3
+for seed in $seed1 $seed2 $seed3
 do
 	archive_file=.archive-$seed
 	$exec_file $seed > $archive_file
@@ -43,13 +43,13 @@ echo "seed $seed3 finish f(x,y)"
 tail -c 14 .data-$seed3 | cut -c-13
 seed3min=`tail -c 14 .data-$seed3 | cut -c-13`
 
-if [ $seed1min < $seed2min ] ; then
+if [ $seed1min -lt $seed2min ] ; then
 	MIN=$seed1min
 else
     MIN=$seed2min
 fi
 
-if [ $MIN < $seed3min ] ; then
+if [ $MIN -lt $seed3min ] ; then
 	MIN=$seed3min
 fi
 

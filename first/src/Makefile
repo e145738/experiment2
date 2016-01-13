@@ -1,7 +1,7 @@
 CC	= cc
 CFLAGS	= -Wall -O2
-SRCDIR = ./level2.1
-OBJDIR = ./level2.1
+SRCDIR = ./level2.3
+OBJDIR = ./level2.3
 
 $(SRCDIR)/steepest_decent: $(OBJDIR)/steepest_decent.o
 
