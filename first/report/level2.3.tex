@@ -1,0 +1,26 @@
+\subsection{Level2.3: $y=-x*cos(x)$ について}
+\subsubsection{プログラムソース（変更部分）}
+\begin{breakbox}
+\begin{verbatim}
+行数 変更点
+28　z = -x * cos(x);
+36　z_dx = x * sin(x) - cos(x);
+\end{verbatim}
+\end{breakbox}
+
+\subsubsection{観察意図と観察方法}
+まずは，元のプログラムを必要な部分だけ変更し，seed値とalphaの値を変更して実験した．
+
+この数式は，局所解が複数あり，最適解を探すことが困難である．よって，この問題を解決するために，初期位置の設定を，シード値を変更して，位置の変更を行い，複数のの局所解の大きさを比べ，より小さい方を最適解とするスクリプトを作成した．
+
+・観察方法
+\begin{enumerate}
+	\item alphaの値を固定し，seed値を1-10までの小さい値と，1000-10000までの1000刻みの値とで観察していく．
+	\item 異なる探索点から複数回行なって，局所解を比較，一番y軸が低い位置にあるほうを解として出力
+	それができればシェルスクリプトでそこを抜き出して,比較,最小のyを求めてそのseed値を投げる
+\end{enumerate}
+
+\subsubsection{実行結果}
+
+\subsubsection{考察}
+
