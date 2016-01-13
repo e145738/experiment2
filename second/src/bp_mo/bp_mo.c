@@ -2,18 +2,18 @@
 #include<math.h>
 #include<stdlib.h>
 
-#define LAYER	3 /* �쥤�䡼�������ϡ���֡������ء� */
-#define INPUT	2 /* �����ؤΥ˥塼��������Ͽ���˿� */
-#define HIDDEN	1 /* ����ؤΥ˥塼����� */
-#define OUTPUT	1 /* �����ؤΥ˥塼����� */
-#define CTG	4 /* �ؽ������ */
+#define LAYER	3 /* レイヤー数（入力・中間・出力層） */
+#define INPUT	2 /* 入力層のニューロン（入力信号）数 */
+#define HIDDEN	1 /* 中間層のニューロン数 */
+#define OUTPUT	1 /* 出力層のニューロン数 */
+#define CTG	4 /* 学習事例数 */
 
-#define ITERATIONS	100000 /* �ؽ�����ʽ�λ���1�� */
+#define ITERATIONS	100000 /* 学習回数（終了条件1） */
 
-#define ETA	1.50   /* �ؽ�����(0�ʾ�μ¿�) */
-#define ALPHA	0.90   /* ������(0��1�μ¿�) */
-#define WD	2.00   /* �Ť߽������ */
-#define MIN_ERR	0.0001 /* �Ǿ������ʽ�λ���2�� */
+#define ETA	1.50   /* 学習係数(0以上の実数) */
+#define ALPHA	0.90   /* 慣性項(0〜1の実数) */
+#define WD	2.00   /* 重み初期化用 */
+#define MIN_ERR	0.0001 /* 最少誤差（終了条件2） */
 
 #define ON		0.9
 #define OFF		0.1
