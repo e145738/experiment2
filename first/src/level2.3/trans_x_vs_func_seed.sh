@@ -17,6 +17,7 @@ fi
 # シミュレーション実行＆データ抽出。
 exec_file="./steepest_decent"
 transition_file="./transition.txt"
+exec_file1="./Compare"
 
 if [ -f $transition_file ] ; then
     rm $transition_file
@@ -31,7 +32,7 @@ done
 
 echo "seed $seed1 finish f(x,y)" 
 tail -c 14 .data-$seed1 | cut -c-13
-seed1min=`tail -c 14 .data-$seed1 | cut -c-13`
+seed1min=`tail -c 14 .data-$seed1 | cut -c-13 `
 echo "$seed1min + 0" | bc
 
 echo "seed $seed2 finish f(x,y)" 
@@ -43,17 +44,8 @@ echo "seed $seed3 finish f(x,y)"
 tail -c 14 .data-$seed3 | cut -c-13
 seed3min=`tail -c 14 .data-$seed3 | cut -c-13`
 
-if [ $seed1min -lt $seed2min ] ; then
-	MIN=$seed1min
-else
-    MIN=$seed2min
-fi
 
-if [ $MIN -lt $seed3min ] ; then
-	MIN=$seed3min
-fi
-
-echo "最適解は $MIN である"
+echo "最適解は `$exec_file1 $seed1min $seed2min $seed3min` である"
 
 # 作図。
 gnuplot<<EOF
