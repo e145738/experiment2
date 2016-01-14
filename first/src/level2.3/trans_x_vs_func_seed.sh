@@ -33,12 +33,10 @@ done
 echo "seed $seed1 finish f(x,y)" 
 tail -c 14 .data-$seed1 | cut -c-13
 seed1min=`tail -c 14 .data-$seed1 | cut -c-13 `
-echo "$seed1min + 0" | bc
 
 echo "seed $seed2 finish f(x,y)" 
 tail -c 14 .data-$seed2 | cut -c-13
 seed2min=`tail -c 14 .data-$seed2 | cut -c-13`
-echo "$seed2min + 0" | bc
 
 echo "seed $seed3 finish f(x,y)" 
 tail -c 14 .data-$seed3 | cut -c-13
@@ -51,7 +49,7 @@ echo "最適解は `$exec_file1 $seed1min $seed2min $seed3min` である"
 gnuplot<<EOF
 set xrange [-10:10]
 set terminal pdf
-set output "seed.pdf"
+set output "compare_seed.pdf"
 set title "-x*cos(x)"
 set xlabel "steps"
 set ylabel "f(x)"
