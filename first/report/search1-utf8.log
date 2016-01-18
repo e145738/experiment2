@@ -1,6 +1,6 @@
-This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2012.6.18)  18 JAN 2016 22:53
-**search2-utf8.tex
-(./search2-utf8.tex
+This is pTeX, Version 3.141592-p3.1.10 (utf8.euc) (Web2C 7.5.4) (format=platex 2012.6.18)  18 JAN 2016 22:41
+**search1-utf8.tex
+(./search1-utf8.tex
 pLaTeX2e <2006/11/10>+0 (based on LaTeX2e <2003/12/01> patch level 0)
 (/usr/local/share/texmf/ptex/platex/base/jarticle.cls
 Document Class: jarticle 2006/06/27 v1.6 Standard pLaTeX class
@@ -53,12 +53,18 @@ File: dvipdfmx.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 \bk@bxb=\box41
 \bk@bxa=\box42
 \bk@lcnt=\count91
-) (./search2-utf8.aux
+) (./search1-utf8.aux
 
-LaTeX Warning: Label `fig:level2' multiply defined.
+LaTeX Warning: Label `trans_seed' multiply defined.
+
+
+LaTeX Warning: Label `step_alpha' multiply defined.
+
+
+LaTeX Warning: Label `trans_seed' multiply defined.
 
 )
-\openout1 = `search2-utf8.aux'.
+\openout1 = `search1-utf8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -87,83 +93,69 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
+(Font)              <7> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+(Font)              <5> on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
  (/usr/local/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
  [1
 
-] (./level1.0.tex
+] (./level1.1.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-)
-(./level1.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
-File: figs/level1/iterations_vs_error.pdf Graphic file (type eps)
- <figs/level1/iterations_vs_error.pdf>
-File: figs/level1/ave.pdf Graphic file (type eps)
- <figs/level1/ave.pdf>
+)
+(./level1.2.tex [2]
+File: figs/level1.2/housing.pdf Graphic file (type eps)
+ <figs/level1.2/housing.pdf>) (./level1.3.tex) [3]
+(./level2.0.tex
+File: figs/level2.0/flow.pdf Graphic file (type eps)
+ <figs/level2.0/flow.pdf>) (./level2.1.tex
+Overfull \hbox (14.70532pt too wide) in paragraph at lines 13--16
+[]\JY1/mc/m/n/10 また\OT1/cmr/m/n/10 ,step \JY1/mc/m/n/10 数を観察する際に \OT1
+/cmr/m/n/10 run[]ave.sh \JY1/mc/m/n/10 を用いて行い\OT1/cmr/m/n/10 , \JY1/mc/m/
+n/10 探索の推移を観察をする際に \OT1/cmr/m/n/10 trans[]step[]vs[]func.sh \JY1/m
+c/m/n/10 と \OT1/cmr/m/n/10 trans[]x[]vs[]func.sh
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[4]
+File: figs/level2.1/trans_seed1-10.pdf Graphic file (type eps)
+ <figs/level2.1/trans_seed1-10.pdf>) (./level2.2.tex [5]
+File: figs/level2.2/sim-1-2.pdf Graphic file (type eps)
 
-[2]) [3] (./level2.0.tex) (./level2.tex
-File: figs/level2/iterations_vs_error_ave.pdf Graphic file (type eps)
-
-<figs/level2/iterations_vs_error_ave.pdf>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figs/level2/heikin.pdf Graphic file (type eps)
-<figs/level2/heikin.pdf>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [4] (./level3.0.tex) (./level3.1.tex
-File: figs/level3.1/3_1.pdf Graphic file (type eps)
- <figs/level3.1/3_1.pdf>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./level3.2.tex [5] [6] [7]) (./level3.3.tex [8]
-File: figs/level3/deter.pdf Graphic file (type eps)
- <figs/level3/deter.pdf>
-File: figs/level3/adata.pdf Graphic file (type eps)
-
-<figs/level3/adata.pdf>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figs/level3/mozi.pdf Graphic file (type eps)
-<figs/level3/mozi.pdf>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./level3.4.tex [9] [10]) [11] [12] (./search2-utf8.aux)
+<figs/level2.2/sim-1-2.pdf>
+File: figs/level2.2/sim-1.pdf Graphic file (type eps)
+ <figs/level2.2/sim-1.pdf> [6]) (./level2.3.tex
+[7] [8]
+File: figs/level2.3/seed-1-10.pdf Graphic file (type eps)
+ <figs/level2.3/seed-1-10.pdf>
+File: figs/level2.3/compare_seed.pdf Graphic file (type eps)
+ <figs/level2.3/compare_seed.pdf> [9])
+[10] (./level3.0.tex) [11] (./search1-utf8.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 725 strings out of 94681
- 8705 string characters out of 1169859
- 59914 words of memory out of 1500000
- 4002 multiletter control sequences out of 10000+50000
+ 717 strings out of 94681
+ 8608 string characters out of 1169859
+ 64914 words of memory out of 1500000
+ 3996 multiletter control sequences out of 10000+50000
  15404 words of font info for 60 fonts, out of 1200000 for 2000
  566 hyphenation exceptions out of 8191
- 25i,7n,21p,395b,386s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 25i,7n,21p,292b,390s stack positions out of 5000i,500n,6000p,200000b,5000s
 
-Output written on search2-utf8.dvi (12 pages, 24060 bytes).
+Output written on search1-utf8.dvi (11 pages, 29476 bytes).
