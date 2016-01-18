@@ -27,16 +27,30 @@ seed値は1で固定，alpha値は0.1~0.9とする．
 step数に多少の変化がみられたものの，劇的な変化ではなかった．\\\\
 
 2.alpha値を変更したときのstep数．\\
-\begin{figure}[h]
- \begin{center}
-  \includegraphics[width=10.0cm]{figs/level2.2/2.2alpha.pdf}
-  \caption{step数の変化}
-	\label{step_alpha}
- \end{center}
-\end{figure}
+
 
 alpha値を変更したことにより，step数に大きな変化がみられた．\\
 特にalpha値を0.1から0.2に変化させたときにstep数の大幅な減少がみられる．\\\\
+
+\begin{table}[htb]
+ \begin{center}
+  \caption{alpha値を変更したときのstep数の変化}
+  \label{table:level3}
+  \begin{tabular}[htb]{r|l} \hline
+   alpha値 &  step数\\ \hline \hline
+   0.1 &  686\\ \hline
+   0.2 & 184 \\ \hline
+   0.3 & 82 \\ \hline
+   0.4 & 45 \\ \hline
+   0.5 & 26 \\ \hline
+   0.6 & 16 \\ \hline
+   0.7 & 19 \\ \hline
+   0.8 & 16 \\ \hline
+   0.9 & 40 \\ \hline \hline
+
+  \end{tabular}
+ \end{center}
+
 
 またstep数が変化すると探索ステップ数あたりの目的関数推移図にも変化が生じることがわかった．\\
 
