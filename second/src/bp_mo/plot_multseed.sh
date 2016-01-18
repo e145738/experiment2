@@ -4,8 +4,9 @@ exec_file=./bp_mo
 
 for seed in 1000 2000 3000 4000 5000 6000 7000 8000 9000 10000
 do
-	$exec_file $seed > .data_$seed
-	cat .data_$seed | sed -e "/ctg/d" | sed -e '$d' | tr -cd "0123456789,.\n" | sed -e 's/,/ /g' > .data_$seed
+	$exec_file $seed > .data_origin$seed
+	cat .data_origin$seed | sed -e "/ctg/d" | sed -e '$d' | tr -cd "0123456789,.\n" | sed -e 's/,/ /g' > .data_$seed
+	rm .data_origin$seed
 done
 
 
