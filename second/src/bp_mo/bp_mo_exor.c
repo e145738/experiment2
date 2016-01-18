@@ -4,14 +4,14 @@
 
 #define LAYER	3 /* レイヤー数（入力・中間・出力層） */
 #define INPUT	2 /* 入力層のニューロン（入力信号）数 */
-#define HIDDEN	1 /* 中間層のニューロン数 */
+#define HIDDEN	10 /* 中間層のニューロン数 */
 #define OUTPUT	1 /* 出力層のニューロン数 */
 #define CTG	4 /* 学習事例数 */
 
 #define ITERATIONS	100000 /* 学習回数（終了条件1） */
 
-#define ETA	1.50   /* 学習係数(0以上の実数) */
-#define ALPHA	0.90   /* 慣性項(0〜1の実数) */
+#define ETA	1.65   /* 学習係数(0以上の実数) */
+#define ALPHA	0.97   /* 慣性項(0〜1の実数) */
 #define WD	2.00   /* 重み初期化用 */
 #define MIN_ERR	0.0001 /* 最少誤差（終了条件2） */
 
@@ -67,7 +67,7 @@ int main(argc,argv)
   i_lay[0][0]=OFF; i_lay[0][1]=OFF; i_lay[0][2]=ON; teach[0][0]=OFF;
   i_lay[1][0]=ON;  i_lay[1][1]=OFF; i_lay[1][2]=ON; teach[1][0]=ON;
   i_lay[2][0]=OFF; i_lay[2][1]=ON;  i_lay[2][2]=ON; teach[2][0]=ON;
-  i_lay[3][0]=ON; i_lay[3][1]=ON;  i_lay[3][2]=ON; teach[3][0]=ON;
+  i_lay[3][0]=ON; i_lay[3][1]=ON;  i_lay[3][2]=ON; teach[3][0]=OFF;
 
   h_lay[HIDDEN]=ON;
 	

@@ -1,8 +1,8 @@
 CC=gcc
 CFLAG=-Wall -DDEBUG
 CLIBS=-lm
-PROG=bp_mo
-OBJS=bp_mo.o
+PROG=bp_mo_exor
+OBJS=bp_mo_exor.o
 ALL: $(PROG)
 .c.o:
 	$(CC)  -c -o $@ $< $(CFLAG) 

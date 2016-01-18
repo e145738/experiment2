@@ -13,11 +13,13 @@ gnuplot <<ENDRATE
 set terminal pdf
 set output "iterations_vs_error.pdf"
 set ylabel "error"
-set yrange [0:0.1]
+set yrange [0:0.2]
 set xlabel "iterations"
 set style fill solid border lc rgb "black"
 plot ".data_1000" using 1:2 with lines, ".data_2000" using 1:2 with lines, ".data_3000" using 1:2 with lines, ".data_4000" using 1:2 with lines, ".data_5000" using 1:2 with lines, ".data_6000" using 1:2 with lines, ".data_7000" using 1:2 with lines, ".data_8000" using 1:2 with lines, ".data_9000" using 1:2 with lines, ".data_10000" using 1:2 with lines
 exit
 ENDRATE
 
+
 open iterations_vs_error.pdf
+
