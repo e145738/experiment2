@@ -34,8 +34,8 @@ set xrange [-10:10]
 set terminal pdf
 set output "seed-1-10.pdf"
 set title "$func"
-set xlabel "steps"
+set xlabel "x"
 set ylabel "f(x)"
-plot $func, ".data-1" using 2:4 with lp, ".data-2" using 2:4 with lp, ".data-3" using 2:4 with lp, ".data-4" using 2:4 with lp, ".data-5" using 2:4 with lp, ".data-6" using 2:4 with lp, ".data-7" using 2:4 with lp, ".data-8" using 2:4 with lp, ".data-9" using 2:4 with lp, ".data-10" using 2:4 with lp 
+plot $func, ".data-1" using 2:4 with lp title "seed=1", ".data-2" using 2:4 with lp title "seed=2", ".data-3" using 2:4 with lp title "seed=3", ".data-4" using 2:4 with lp title "seed=4", ".data-5" using 2:4 with lp title "seed=5", ".data-6" using 2:4 with lp title "seed=6", ".data-7" using 2:4 with lp title "seed=7", ".data-8" using 2:4 with lp title "seed=8", ".data-9" using 2:4 with lp title "seed=9", ".data-10" using 2:4 with lp title "seed=10"
  
 EOF
